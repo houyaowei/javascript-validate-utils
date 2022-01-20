@@ -1,0 +1,27 @@
+{
+  "name": "javascript-validate-utils",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "houyuewei <houyaowei@163.com>",
+  "description": "a validate tool for variables",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houyaowei/javascript-validate-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/houyaowei/javascript-validate-utils/issues"
+  },
+  "homepage": "https://github.com/houyaowei/javascript-validate-utils#readme",
+  "devDependencies": {
+    "ject": "^1.1.0",
+    "rollup": "^2.64.0"
+  }
+}
