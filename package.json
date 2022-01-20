@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "main": "index.js",
   "author": "houyuewei <houyaowei@163.com>",
-  "description": "a validate tool for variables",
+  "description": "a validate tool for variables and functions",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "jest"
   },
   "files": [
     "dist",
@@ -21,7 +22,9 @@
   },
   "homepage": "https://github.com/houyaowei/javascript-validate-utils#readme",
   "devDependencies": {
-    "ject": "^1.1.0",
+    "jest": "^27.4.7",
+    "jest-esm-transformer": "^1.0.0",
     "rollup": "^2.64.0"
-  }
+  },
+  "dependencies": {}
 }
