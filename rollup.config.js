@@ -1,5 +1,5 @@
 export default {
-  input: './main.js',
+  input: './src/main.js',
   output: {
     file: 'dist/javascript-validate-utils.js',
     format: 'esm',
