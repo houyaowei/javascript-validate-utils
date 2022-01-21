@@ -22,7 +22,7 @@ isExit(对象中的属性), Symbol, arrayLike,isEmpty, isEqual,isMap,isSet,isReg
 isElement(DOM元素)`
 
 ### 特别提醒
-`isDate` 支持日期实例或者合法的字符串'2021-1-21 12:20:21
+`isDate` 支持日期实例或者合法的字符，如：`2021-1-21 12:20:21`
 
 ### 协议
 MIT
