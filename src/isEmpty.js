@@ -41,6 +41,4 @@ const isEmpty = function(value) {
   }
 }
 
-export {
-  isEmpty
-}
+export default isEmpty

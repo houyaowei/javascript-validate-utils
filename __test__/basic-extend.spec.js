@@ -1,11 +1,12 @@
 import isArrayLike from "../src/utils/isArrayLike";
 import {isTypedArray} from "../src/isTypeArray";
-import {isEmpty} from "../src/refers";
+import isEmpty from "../src/isEmpty";
 import isMap from "../src/isMap";
 import isSet from "../src/isSet";
 import isSymbol from "../src/isSymbol";
 import isRegExp from "../src/isRegExp";
 import isError from "../src/isError";
+import isKeyExist from "../src/isKeyExist";
 
 describe('javascript basic extend type validation', ()=> {
   test('isArrayLike test cases', ()=> {
@@ -48,5 +49,24 @@ describe('javascript basic extend type validation', ()=> {
   test('isRegExp test cases', ()=> {
     expect(isRegExp(/\w{1,9}/)).toBeTruthy()
     expect(isRegExp('/\w{1,9}/')).toBeFalsy()
+  })
+  test('isKeyExist test cases', ()=> {
+    expect(isKeyExist({},'name')).toBeFalsy()
+
+    let obj = {
+      name: 'hyw'
+    }
+    expect(isKeyExist(obj,'name')).toBeTruthy()
+    expect(isKeyExist(obj,'age')).toBeFalsy()
+
+    const map = new Map([
+      ['name', '张三'],
+      ['title', 'Author']
+    ]);
+    expect(isKeyExist(map,'name')).toBeTruthy()
+    expect(isKeyExist(map,'age')).toBeFalsy()
+
+    let set = new Set([1, 4, 9]);
+    expect(isKeyExist(set,4)).toBeTruthy()
   })
 })

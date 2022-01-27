@@ -3,9 +3,13 @@
  */
 import { isString, isNumber, isArray ,isNull, isFunction, isObject, isDate,isBoolean} from './basic'
 import isArrayLike from "./utils/isArrayLike";
-import {isEmpty} from "./refers";
+import isEmpty from "./isEmpty";
 import isMap from "./isMap";
 import isSet from "./isSet";
+import isError from "./isError";
+import isSymbol from "./isSymbol";
+import isRegExp from "./isRegExp";
+import isKeyExist from "./isKeyExist";
 
 export {
   isString,
@@ -19,5 +23,9 @@ export {
   isArrayLike,
   isSet,
   isMap,
-  isEmpty
+  isEmpty,
+  isRegExp,
+  isError,
+  isSymbol,
+  isKeyExist
 }
