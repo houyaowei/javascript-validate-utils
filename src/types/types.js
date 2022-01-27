@@ -7,5 +7,8 @@ export default {
     'ARRAY': '[object Array]',
     'FUNCTION': '[object Function]',
     'DATE':'[object Date]',
-    'BOOLEAN': '[object Boolean]'
+    'BOOLEAN': '[object Boolean]',
+    'ARGUMENTS': '[object Arguments]',
+    'MAP': '[object Map]',
+    'SET': '[object Set]'
 }

@@ -12,13 +12,13 @@ console.log(isObject({}))
 
 已经完成的：
 
-`isString, isNumber, isArray ,isNull, isFunction, isObject, isDate,isBoolean`
+`isString, isNumber, isArray ,isNull, isFunction, isObject, isDate,isBoolean,isArrayLike,isEmpty`
 
 
 未完成的：
 
 `
-isExit(对象中的属性), Symbol, arrayLike,isEmpty, isEqual,isMap,isSet,isRegExp, isError
+isExit(对象中的属性), Symbol, isEqual,isMap,isSet,isRegExp, isError
 isElement(DOM元素)`
 
 ### 特别提醒
