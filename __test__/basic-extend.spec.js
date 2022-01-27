@@ -3,6 +3,9 @@ import {isTypedArray} from "../src/isTypeArray";
 import {isEmpty} from "../src/refers";
 import isMap from "../src/isMap";
 import isSet from "../src/isSet";
+import isSymbol from "../src/isSymbol";
+import isRegExp from "../src/isRegExp";
+import isError from "../src/isError";
 
 describe('javascript basic extend type validation', ()=> {
   test('isArrayLike test cases', ()=> {
@@ -29,8 +32,21 @@ describe('javascript basic extend type validation', ()=> {
     expect(isMap(new Map)).toBeTruthy()
     expect(isMap(new WeakMap)).toBeFalsy()
   })
+  test('isError test cases',()=> {
+    expect(isError(new Error)).toBeTruthy()
+    expect(isError(true)).toBeFalsy()
+    expect(isError(null)).toBeFalsy()
+  })
   test('isSet test cases',()=> {
     expect(isSet(new Set)).toBeTruthy()
     expect(isSet(new WeakSet)).toBeFalsy()
+  })
+  test('isSymbol test cases',()=> {
+    expect(isSymbol(Symbol.iterator)).toBeTruthy()
+    expect(isSymbol('sss')).toBeFalsy()
+  })
+  test('isRegExp test cases', ()=> {
+    expect(isRegExp(/\w{1,9}/)).toBeTruthy()
+    expect(isRegExp('/\w{1,9}/')).toBeFalsy()
   })
 })

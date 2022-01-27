@@ -10,5 +10,7 @@ export default {
     'BOOLEAN': '[object Boolean]',
     'ARGUMENTS': '[object Arguments]',
     'MAP': '[object Map]',
-    'SET': '[object Set]'
+    'SET': '[object Set]',
+    'SYMBOL':'[object Symbol]',
+    'REG': '[object RegExp]'
 }
