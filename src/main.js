@@ -1,7 +1,7 @@
 /**
  * 入口
  */
-import { isString, isNumber, isArray ,isNull, isFunction, isObject, isDate,isBoolean} from './basic'
+import { isString, isNumber, isArray ,isNull, isFunction, isObject, isDate,isBoolean,isUndefined} from './basic'
 import isArrayLike from "./utils/isArrayLike";
 import isEmpty from "./isEmpty";
 import isMap from "./isMap";
@@ -10,6 +10,9 @@ import isError from "./isError";
 import isSymbol from "./isSymbol";
 import isRegExp from "./isRegExp";
 import isKeyExist from "./isKeyExist";
+import isWeakMap from "./isWeakMap";
+import isWeakSet from "./isWeakSet";
+import isElement from "./isElement";
 
 export {
   isString,
@@ -27,5 +30,9 @@ export {
   isRegExp,
   isError,
   isSymbol,
-  isKeyExist
+  isKeyExist,
+  isUndefined,
+  isWeakMap,
+  isWeakSet,
+  isElement
 }

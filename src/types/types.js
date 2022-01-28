@@ -10,6 +10,8 @@ export default {
     'BOOLEAN': '[object Boolean]',
     'ARGUMENTS': '[object Arguments]',
     'MAP': '[object Map]',
+    'WEAKMAP': '[object WeakMap]',
+    'WEAKSET': '[object WeakSet]',
     'SET': '[object Set]',
     'SYMBOL':'[object Symbol]',
     'REG': '[object RegExp]'

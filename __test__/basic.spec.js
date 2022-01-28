@@ -1,4 +1,4 @@
-import { isString, isNumber, isArray,isNull,isFunction,isObject,isDate,isBoolean }  from "../src/basic";
+import { isString, isNumber, isArray,isNull,isFunction,isObject,isDate,isBoolean ,isUndefined}  from "../src/basic";
 
 describe('javascript basic type validation', ()=> {
     test('basic string', () => {
@@ -69,6 +69,10 @@ describe('javascript basic type validation', ()=> {
         expect(isBoolean(false)).toBeTruthy()
         expect(isBoolean({})).toBeFalsy()
         expect(isBoolean(new Error)).toBeFalsy()
+    })
+    test('isUndefined test cases', ()=> {
+        expect(isUndefined(undefined)).toBeTruthy()
+        expect(isUndefined(3)).toBeFalsy()
     })
 })
 

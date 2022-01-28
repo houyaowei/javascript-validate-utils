@@ -7,6 +7,10 @@ import isSymbol from "../src/isSymbol";
 import isRegExp from "../src/isRegExp";
 import isError from "../src/isError";
 import isKeyExist from "../src/isKeyExist";
+import isWeakMap from "../src/isWeakMap";
+import isWeakSet from "../src/isWeakSet";
+import isElement from "../src/isElement";
+
 
 describe('javascript basic extend type validation', ()=> {
   test('isArrayLike test cases', ()=> {
@@ -68,5 +72,17 @@ describe('javascript basic extend type validation', ()=> {
 
     let set = new Set([1, 4, 9]);
     expect(isKeyExist(set,4)).toBeTruthy()
+  })
+  test('isWeakMap test cases',()=> {
+    expect(isWeakMap(new WeakMap)).toBeTruthy()
+    expect(isWeakMap(new Map)).toBeFalsy()
+  })
+  test('isWeakSet test cases',()=> {
+    expect(isWeakSet(new WeakSet)).toBeTruthy()
+    expect(isWeakSet(new Set)).toBeFalsy()
+  })
+  test('isElement test cases', ()=> {
+    //TODO 增加测试条件
+    // expect(isElement(document.body)).toBeTruthy()
   })
 })

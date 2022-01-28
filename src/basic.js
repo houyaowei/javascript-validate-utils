@@ -63,6 +63,9 @@ const isBoolean = (value) => {
   return value === true || value === false ||
     (isObjectLike(value) && getTag(value) == types.BOOLEAN)
 }
+const isUndefined = (value) => {
+  return value === undefined || getTag(value) === types.UNDEFINED
+}
 export {
   isString,
   isNumber,
@@ -71,5 +74,6 @@ export {
   isFunction,
   isObject,
   isDate,
-  isBoolean
+  isBoolean,
+  isUndefined
 }

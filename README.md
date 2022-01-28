@@ -37,10 +37,14 @@ console.log(isObject({}))
 - isSymbol
 - isError
 - isRegExp
-- isExits
+- isKeyExist
+- isUndefined
+- isWeakMap
+- isWeakSet
+- isElement
 
-未实现的：
-isEqual, isElement(DOM元素)`
+待实现的：
+- isEqual
 
 
 

@@ -5,9 +5,7 @@ import isArguments from "./isArguments";
 import types from "./types/types";
 import {getTag} from "./utils/getTag";
 import isPrototype from "./isPrototype";
-
-//检测hasOwnProperty
-const _hasOwnProperty = Object.prototype.hasOwnProperty
+import {_hasOwnProperty} from "./setup";
 
 
 const isEmpty = function(value) {

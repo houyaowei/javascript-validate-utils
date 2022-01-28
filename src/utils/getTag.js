@@ -1,6 +1,5 @@
 import types from '../types/types'
-
-const _toString = Object.prototype.toString;
+import {_toString} from "../setup";
 
 const getTag =(value)=> {
     if (value == null) {
