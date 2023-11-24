@@ -1,30 +1,41 @@
 {
   "name": "javascript-validate-utils",
   "version": "0.2.3",
-  "main": "dist/javascript-validate-utils.js",
+  "main": "dist/cjs/javascript-validate-utils.js",
+  "module": "dist/mjs/javascript-validate-utils.js",
   "author": "houyuewei <houyaowei@163.com>",
   "description": "a validate tool for variables and functions",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "test": "jest"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest",
+    "check-updates": "npx npm-check-updates",
+    "check-updates:minor": "npx npm-check-updates --target minor",
+    "check-updates:patch": "npx npm-check-updates --target patch"
   },
   "files": [
     "dist",
     "src"
   ],
+  "types": "./types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/houyaowei/javascript-validate-utils.git"
+    "url": "git+https://github.com/houyaowei/javascript-validate-utils/tree/v2-ts"
   },
   "bugs": {
     "url": "https://github.com/houyaowei/javascript-validate-utils/issues"
   },
   "homepage": "https://github.com/houyaowei/javascript-validate-utils#readme",
   "devDependencies": {
-    "jest": "^27.4.7",
-    "jest-esm-transformer": "^1.0.0",
-    "rollup": "^2.64.0"
+    "@types/jest": "^29.5.10",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "ts-jest": "^29.1.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.3.2"
   },
   "dependencies": {}
 }
