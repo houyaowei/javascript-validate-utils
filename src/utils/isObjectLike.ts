@@ -3,7 +3,7 @@
  * @param value
  * @returns {boolean}
  */
-function isObjectLike(value) {
+function isObjectLike(value: object) {
   return typeof value === 'object' && null !== value
 }
 

@@ -4,14 +4,14 @@
  * 2、带有[[prototype]],即对象实例
  * 3、null
  */
-import types from "../types/types";
-import {getTag} from "./getTag";
+import { TYPES } from "../types/types";
+import { getTag } from "./getTag";
 import isObjectLike from "./isObjectLike";
 
 
-function isPlainObject(value) {
+function isPlainObject(value: object) {
   //不是对象
-  if (!isObjectLike(value) || !(getTag(value) === types.OBJECT)) {
+  if (!isObjectLike(value) || !(getTag(value) === TYPES.OBJECT)) {
     return false
   }
   // Object.create(null)

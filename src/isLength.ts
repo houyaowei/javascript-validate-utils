@@ -5,7 +5,7 @@
  * @returns {boolean}
  */
 
-function isLength(value) {
+function isLength(value: number) {
   return typeof value === 'number' &&
     value > -1 && value <= Number.MAX_SAFE_INTEGER
 }

@@ -5,8 +5,9 @@ import isLength from '../isLength'
  * @param value
  * @returns {boolean}
  */
-function isArrayLike(value) {
-  return value != null && typeof value !== 'function' && isLength(value.length)
+
+function isArrayLike(arr: any[]) {
+  return arr != null && typeof arr !== 'function' && isLength(arr.length)
 }
 
 export default isArrayLike

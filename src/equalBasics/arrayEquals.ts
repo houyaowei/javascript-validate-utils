@@ -1,4 +1,4 @@
-import {isUndefined} from "../basic";
+import { isUndefined } from "../basic";
 
 /**
  * 判断两个数组是否相同
