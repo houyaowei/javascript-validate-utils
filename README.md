@@ -72,6 +72,18 @@ isKeyExist(value, key): 判断key是否在value中是否存在,支持对象,map,
 `isEqual`是判断对象字面量是否相等
 
 
+### TS支持
+由于最近没有升级该库的计划，对于在ts工程中报错的情况，可以在根目录中新增global.d.ts文件，添加以下内容：
+```javascript 
+declare module 'javascript-validate-utils' {
+  export function isRegExp(value: string): boolean;
+  export function isArray(arr: any[]): boolean;
+
+  //其他方法
+}
+```
+
+
 
 ### 协议
 MIT
